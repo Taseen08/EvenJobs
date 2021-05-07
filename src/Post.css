@@ -1,5 +1,5 @@
 .post {
-  background-color: white;
+  background-color: rgb(233, 233, 240);
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -15,12 +15,13 @@
 }
 
 .post-info > p {
-  font-size: 12px;
-  color: grey;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
 }
 
 .post-info > h2 {
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 1400;
 }
 
 .post-body {
@@ -29,5 +30,21 @@
 
 .post-buttons {
   display: flex;
-  /* justify-content: space-evenly; */
+  justify-content: flex-end;
+}
+
+.post-buttons .btn {
+  background-color: rgb(233, 233, 240);
+  padding: 10px 15px;
+  border: none;
+  color: rgb(37, 35, 35);
+  display: inline-block;
+  border-radius: 15px;
+  width: fit-content;
+  margin-right: 20px;
+}
+
+.post-buttons .btn:hover {
+  background-color: rgb(151, 154, 158);
+  color: whitesmoke;
 }

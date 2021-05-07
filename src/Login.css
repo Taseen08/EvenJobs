@@ -1,0 +1,128 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 320px;
+}
+
+.login > h1 {
+  font-size: 60px;
+  color: rgb(14, 202, 108);
+  font-weight: 2200;
+}
+
+.login > h1 > span {
+  color: rgb(196, 21, 21);
+  font-size: 65px;
+  font-weight: 1800;
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login > form > input {
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.login > form > textarea {
+  width: 353px;
+  height: 150px;
+  font-size: 20px;
+  font-weight: 400;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 0;
+  padding-top: 0;
+  resize: vertical;
+}
+
+.login > form > button {
+  width: 356px;
+  height: 50px;
+  font-size: large;
+  color: #ffff;
+  margin-left: 5px;
+  background-color: #0074b1;
+  border-radius: 5px;
+  border: none;
+}
+
+.login_register {
+  color: #1a98db;
+  cursor: pointer;
+}
+
+.login_register:hover {
+  color: #65bae7;
+  text-decoration: underline;
+}
+
+.login > p {
+  margin-top: 20px;
+  color: white;
+}
+
+.login .about-us {
+  width: 50%;
+  height: auto;
+  background-color: rgba(16, 13, 44, 0.212);
+  margin-top: 10%;
+  padding: 10px 15px 30px 15px;
+  border-radius: 10px;
+  overflow-wrap: break-word;
+  white-space: inherit;
+}
+
+.login .about-us > h1 {
+  font-size: 60px;
+  color: rgb(14, 202, 108);
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+
+.login .about-us > h1 > span {
+  color: rgb(196, 21, 21);
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.login .about-us > p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.login .about-us .red {
+  color: rgb(196, 21, 21) !important;
+  font-weight: 500;
+}
+.login .about-us .green {
+  color: rgb(14, 202, 108) !important;
+  font-weight: 450;
+}
+
+.login .about-us .ending-points {
+  color: rgb(220, 222, 228) !important;
+  font-weight: 450;
+  font-size: smaller;
+}
+
+.login .about-us > p > a {
+  color: rgb(196, 21, 21);
+}
+
+.login .about-us > p > a:hover {
+  color: rgb(14, 202, 108);
+}

@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
-  color: rgb(94, 86, 86);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 .headerOption:hover {
-  color: black;
+  color: rgb(141, 141, 156);
 }
 
 .headerOption-title {

@@ -2,9 +2,14 @@
   position: sticky;
   top: 0;
   display: flex;
-  background-color: white;
-  justify-content: space-evenly;
-  border-bottom: 0.1px solid lightgray;
+  border-bottom: 0.5px solid rgb(255, 255, 255);
+  background-image: linear-gradient(
+    94.3deg,
+    rgba(26, 33, 64, 1) 10.9%,
+    rgba(81, 84, 115, 1) 87.1%
+  );
+  justify-content: space-between;
+
   padding: 10px 0 10px 0;
   width: 100%;
   z-index: 999;
@@ -12,34 +17,55 @@
 /* header left */
 .header-left {
   display: flex;
-  color: rgb(25, 26, 109);
+  color: rgb(14, 202, 108);
+  font-weight: 1000;
+  margin-left: 15%;
 }
 
 .header-left h2 {
   margin-right: 10px;
 }
 .header-left span {
-  color: rgb(175, 38, 38);
+  color: rgb(196, 21, 21);
+  font-size: 30px;
+  font-weight: 2000;
 }
 
 .header-search {
   padding: 10px;
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
   height: 22px;
-  color: rgb(107, 90, 90);
-  background-color: #eef3f8;
+  color: rgb(255, 255, 255);
+  background-color: #1e2730;
+  border: 1px solid rgb(58, 69, 73);
 }
 
 .header-search > input {
   outline: none;
   border: none;
   background: none;
+  color: white;
 }
 
 /* header right */
 
 .header-right {
   display: flex;
+  margin-right: 15%;
+}
+
+/* Responsiveness */
+
+@media (max-width: 600px) {
+  .header-left {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-right {
+    margin-right: 0;
+  }
 }

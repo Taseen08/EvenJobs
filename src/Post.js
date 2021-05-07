@@ -1,21 +1,18 @@
 import { Avatar } from "@material-ui/core";
-import React from "react";
+import React, { forwardRef } from "react";
 import "./Post.css";
-import InputOption from "./InputOption";
-import ThumbUpAltOutlinedIcon from "@material-ui/icons/ThumbUpAltOutlined";
-import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
-import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
-import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
-function Post({ name, description, message, photoUrl }) {
+const Post = forwardRef(({ name, description, message, timestamp }, ref) => {
   return (
-    <div className="post">
+    <div ref={ref} className="post">
       {/* header */}
       <div className="post-header">
-        <Avatar src={photoUrl} />
+        <Avatar>{name[0]}</Avatar>
         <div className="post-info">
           <h2>{name}</h2>
           <p>{description}</p>
+          <p>{timestamp?.toDate().toUTCString()}</p>
         </div>
       </div>
 
@@ -26,13 +23,20 @@ function Post({ name, description, message, photoUrl }) {
 
       {/* buttons */}
       <div className="post-buttons">
-        <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="gray" />
-        <InputOption Icon={ChatOutlinedIcon} title="Comment" color="gray" />
-        <InputOption Icon={ShareOutlinedIcon} title="Share" color="gray" />
-        <InputOption Icon={SendOutlinedIcon} title="Send" color="gray" />
+        <button
+          className="btn"
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+
+            window.location.href = `mailto:${description}`;
+          }}
+        >
+          <MailOutlineIcon />
+        </button>
       </div>
     </div>
   );
-}
+});
 
 export default Post;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../features/userSlice";
+import { login } from "./features/userSlice";
 import { auth } from "./firebase";
 import "./Login.css";
 
@@ -48,7 +48,7 @@ function Login() {
                 email: userAuth.user.email,
                 uid: userAuth.user.uid,
                 displayName: name,
-                photoURL: profilePic,
+                photoUrl: profilePic,
               })
             );
           });
@@ -58,10 +58,10 @@ function Login() {
 
   return (
     <div className="login">
-      <img
-        src="https://www.pinclipart.com/picdir/middle/55-557165_graphic-transparent-library-file-logo-wikimedia-commons-transparent.png"
-        alt="linkin logo"
-      />
+      <a name="top"></a>
+      <h1>
+        <span>Even</span>Jobs
+      </h1>
 
       <form>
         <input
@@ -69,12 +69,6 @@ function Login() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Full name (required if registering)"
-        />
-        <input
-          type="text"
-          value={profilePic}
-          onChange={(e) => setProfilePic(e.target.value)}
-          placeholder="Profile picture URL (optional)"
         />
         <input
           type="email"
@@ -88,6 +82,14 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
+        <textarea
+          className="description-box"
+          value={profilePic}
+          onChange={(e) => setProfilePic(e.target.value)}
+          placeholder="Description yourself, your past experiences and acquired skills(required if registering)"
+          cols="30"
+          rows="100"
+        ></textarea>
         <button type="submit" onClick={loginToApp}>
           Sign In
         </button>
@@ -98,6 +100,38 @@ function Login() {
           Register Now
         </span>
       </p>
+      <div className="about-us">
+        <h1>
+          Are doing odd jobs <span>even</span> worth it?
+          <br /> <span>Definity!</span>
+        </h1>
+        <p>
+          Odd jobs are jobs at the end of the day. One should not be discouraged
+          to avoid jobs like delivery-driver, tutoring, call-center jobs just
+          because a particular group in the Bangladeshi society thinks that
+          those jobs are inferior. People should be encouraged to do whatever
+          job they want in order to make a living. <br /> <br />
+          Most job websites do not have significant postings of such jobs. This
+          is a problem. But, dont worry!
+          <span className="red"> Even</span>
+          <span className="green">Jobs</span> is the platform for you where you
+          can post about: <br /> <br />
+          1. The job that you are looking for. <br />
+          2. Find employees for a job that you have been looking for in various
+          other websites. <br /> <br />
+          The job/employee search is made easier for convenience so that a
+          larger community can benefit from it. Just look through the posts and
+          email the individual/company to get in touch for further procedures.
+          Lets get <a href="#top">started</a>! <br /> <br />
+          <span className="ending-points">
+            ** Please make sure the posts are clean and are related solely to
+            the purpose of the website. <br />
+            ** The website is still under construction so some features are
+            dummy but will soon be made live. <br />
+            ** Please kindly avoid Safari web browser when posting on the forum.
+          </span>
+        </p>
+      </div>
     </div>
   );
 }
