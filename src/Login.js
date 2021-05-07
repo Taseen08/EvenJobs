@@ -68,7 +68,7 @@ function Login() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Full name (required if registering)"
+          placeholder="Full name (required if register)"
         />
         <input
           type="email"
@@ -88,7 +88,7 @@ function Login() {
           onChange={(e) => setProfilePic(e.target.value)}
           placeholder="Description yourself, your past experiences and acquired skills(required if registering)"
           cols="30"
-          rows="100"
+          rows="8"
         ></textarea>
         <button type="submit" onClick={loginToApp}>
           Sign In
