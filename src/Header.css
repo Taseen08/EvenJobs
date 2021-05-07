@@ -58,6 +58,15 @@
 
 /* Responsiveness */
 
+@media (max-width: 300px) {
+  .header-left {
+    margin-left: 0;
+  }
+  .header-search {
+    width: 100px;
+  }
+}
+
 @media (max-width: 600px) {
   .header-left {
     margin-left: 3%;
