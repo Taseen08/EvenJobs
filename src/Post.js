@@ -11,7 +11,6 @@ const Post = forwardRef(({ name, description, message, timestamp }, ref) => {
         <Avatar>{name[0]}</Avatar>
         <div className="post-info">
           <h2>{name}</h2>
-          <p>{description}</p>
           <p>{timestamp?.toDate().toUTCString()}</p>
         </div>
       </div>
