@@ -126,3 +126,28 @@
 .login .about-us > p > a:hover {
   color: rgb(14, 202, 108);
 }
+
+@media (max-width: 400px) {
+  .login {
+    margin: 0 15px 0 15px;
+  }
+  .login > form > input {
+    width: 90%;
+    height: auto;
+  }
+
+  .login > form > textarea {
+    width: 90%;
+    height: auto;
+  }
+  .login > form > button {
+    width: 90%;
+    height: 40px;
+  }
+  .login .about-us > h1 {
+    font-size: 20px;
+  }
+  .login .about-us > h1 > span {
+    font-size: 20px;
+  }
+}
