@@ -103,7 +103,7 @@ function Login() {
       <div className="about-us">
         <h1>
           Are doing odd jobs <span>even</span> worth it?
-          <br /> <span>Definity!</span>
+          <br /> <span>Definitely!</span>
         </h1>
         <p>
           Odd jobs are jobs at the end of the day. One should not be discouraged
