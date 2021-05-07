@@ -108,17 +108,21 @@ function Login() {
         <p>
           Odd jobs are jobs at the end of the day. One should not be discouraged
           to avoid jobs like delivery-driver, tutoring, call-center jobs just
-          because a particular group in the Bangladeshi society thinks that
-          those jobs are inferior. People should be encouraged to do whatever
-          job they want in order to make a living. <br /> <br />
+          because a particular group in the <span className="red"> Bangla</span>
+          <span className="green">deshi</span> society thinks that those jobs
+          are inferior. People should be encouraged to do whatever job they want
+          in order to make a living. <br /> <br />
           Most job websites do not have significant postings of such jobs. This
           is a problem. But, dont worry!
           <span className="red"> Even</span>
-          <span className="green">Jobs</span> is the platform for you where you
-          can post about: <br /> <br />
-          1. The job that you are looking for. <br />
-          2. Find employees for a job that you have been looking for in various
-          other websites. <br /> <br />
+          <span className="green">Jobs</span> is the platform by a{" "}
+          <span className="red"> Bangla</span>
+          <span className="green">deshi </span>
+          for various other <span className="red"> Bangla</span>
+          <span className="green">deshis</span> where they can post about:{" "}
+          <br /> <br />
+          1. The job positions that they are looking for. <br />
+          2. The employees they are looking for hiring. <br /> <br />
           The job/employee search is made easier for convenience so that a
           larger community can benefit from it. Just look through the posts and
           email the individual/company to get in touch for further procedures.
