@@ -38,13 +38,11 @@ function App() {
           <Login />
         </div>
       ) : (
-        <div className="overlay">
-          <div className="app">
-            <Header />
-            <div className="app-body">
-              <Sidebar />
-              <Feed />
-            </div>
+        <div className="app">
+          <Header />
+          <div className="app-body">
+            <Sidebar />
+            <Feed />
           </div>
         </div>
       )}

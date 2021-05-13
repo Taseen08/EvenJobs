@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
 import HeaderOption from "./HeaderOption";
 import ExitToAppSharpIcon from "@material-ui/icons/ExitToAppSharp";
 import { useDispatch } from "react-redux";
@@ -21,11 +20,11 @@ function Header() {
         <h2>
           <span>Even</span>Jobs
         </h2>
-
-        <div className="header-search">
+        {/* <div className="header-search">
           <SearchIcon />
           <input placeholder="Search" type="text" />
-        </div>
+        </div> */}{" "}
+        {/* Will add this functionality later */}
       </div>
 
       <div className="header-right">

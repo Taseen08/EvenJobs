@@ -16,7 +16,7 @@
 }
 
 .login > h1 > span {
-  color: rgb(196, 21, 21);
+  color: rgb(221, 14, 14);
   font-size: 65px;
   font-weight: 1800;
 }
@@ -53,10 +53,14 @@
   height: 50px;
   font-size: large;
   color: #ffff;
-  margin-left: 5px;
+  margin: 5px 20px 7px 5px;
   background-color: #0074b1;
   border-radius: 5px;
   border: none;
+}
+
+.login > form > button:hover {
+  background-color: #1393d8;
 }
 
 .login_register {
@@ -93,7 +97,7 @@
 }
 
 .login .about-us > h1 > span {
-  color: rgb(196, 21, 21);
+  color: rgb(221, 14, 14);
   font-size: 65px;
   font-weight: 600;
 }
@@ -105,7 +109,7 @@
 }
 
 .login .about-us .red {
-  color: rgb(196, 21, 21) !important;
+  color: rgb(221, 14, 14) !important;
   font-weight: 450;
 }
 .login .about-us .green {
@@ -120,7 +124,7 @@
 }
 
 .login .about-us > p > a {
-  color: rgb(196, 21, 21);
+  color: rgb(221, 14, 14);
 }
 
 .login .about-us > p > a:hover {

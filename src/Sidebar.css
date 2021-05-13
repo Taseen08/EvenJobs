@@ -53,7 +53,7 @@
   text-align: left;
   padding: 10px;
   border-radius: 10px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin-top: 10px;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .sidebar-recentItem:hover {
-  background-color: rgb(228, 224, 224);
+  background-color: rgb(211, 210, 210);
   border-radius: 10px;
   cursor: pointer;
   color: rgb(0, 0, 0);

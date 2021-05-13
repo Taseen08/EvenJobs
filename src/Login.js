@@ -68,7 +68,7 @@ function Login() {
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Full name (required if register)"
+          placeholder="Full name (required if sign up)"
         />
         <input
           type="email"
@@ -86,20 +86,18 @@ function Login() {
           className="description-box"
           value={profilePic}
           onChange={(e) => setProfilePic(e.target.value)}
-          placeholder="Description yourself, your past experiences and acquired skills(required if registering)"
+          placeholder="Description yourself, your past experiences and acquired skills(required if sign up)"
           cols="30"
           rows="8"
         ></textarea>
         <button type="submit" onClick={loginToApp}>
           Sign In
         </button>
+        <button type="submit" onClick={register}>
+          Sign Up
+        </button>
       </form>
-      <p>
-        Not a member?{" "}
-        <span className="login_register" onClick={register}>
-          Register Now
-        </span>
-      </p>
+
       <div className="about-us">
         <h1>
           Are doing odd jobs <span>even</span> worth it?
@@ -129,10 +127,7 @@ function Login() {
           Lets get <a href="#top">started</a>! <br /> <br />
           <span className="ending-points">
             ** Please make sure the posts are clean and are related solely to
-            the purpose of the website. <br />
-            ** The website is still under construction so some features are
-            dummy but will soon be made live. <br />
-            ** Please kindly avoid Safari web browser when posting on the forum.
+            the purpose of the website.
           </span>
         </p>
       </div>

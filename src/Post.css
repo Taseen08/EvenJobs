@@ -1,5 +1,5 @@
 .post {
-  background-color: rgb(233, 233, 240);
+  background-color: rgb(255, 255, 255);
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -34,7 +34,7 @@
 }
 
 .post-buttons .btn {
-  background-color: rgb(233, 233, 240);
+  background-color: rgb(255, 255, 255);
   padding: 10px 15px;
   border: none;
   color: rgb(37, 35, 35);
@@ -45,6 +45,6 @@
 }
 
 .post-buttons .btn:hover {
-  background-color: rgb(151, 154, 158);
+  background-color: rgb(168, 169, 170);
   color: whitesmoke;
 }

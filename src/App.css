@@ -1,9 +1,10 @@
 .app {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     94.3deg,
     rgba(26, 33, 64, 1) 10.9%,
     rgba(81, 84, 115, 1) 87.1%
-  );
+  ); */
+  background-color: #2b2e4a;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -16,10 +17,6 @@
   max-width: 1200px;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.overlay {
-  background-image: url(https://images.unsplash.com/photo-1531033630530-f25669e3c48d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZG90c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
 }
 
 /* Responsiveness */

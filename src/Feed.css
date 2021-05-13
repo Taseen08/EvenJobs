@@ -4,7 +4,7 @@
 }
 
 .feed-inputContainer {
-  background-color: rgb(233, 233, 240);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
   padding-bottom: 20px;
   border-radius: 10px;
@@ -38,18 +38,8 @@
   width: 100%;
 }
 
-/* .feed-input > form > input {
-  outline: none;
-  border: none;
-  background: none;
-  flex: 1;
-  margin-left: 10px;
-  outline-width: 0;
-  font-weight: 600;
-} */
-
 .feed-inputOption > button {
-  background-color: rgb(233, 233, 240);
+  background-color: rgb(255, 255, 255);
   background-color: none;
   border: none;
   margin-right: 2%;
