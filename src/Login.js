@@ -121,7 +121,7 @@ function Login() {
           <br /> <br />
           1. The job positions that they are looking for. <br />
           2. The employees they are looking for hiring. <br /> <br />
-          The job/employee search is made easier for convenience so that a
+          The search is made easier for convenience so that a
           larger community can benefit from it. Just look through the posts and
           email the individual/company to get in touch for further procedures.
           Lets get <a href="#top">started</a>! <br /> <br />
