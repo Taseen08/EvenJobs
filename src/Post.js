@@ -4,6 +4,10 @@ import "./Post.css";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
 const Post = forwardRef(({ name, description, message, timestamp }, ref) => {
+  if (name === null) {
+    name = 'Anonymous';
+  }
+
   return (
     <div ref={ref} className="post">
       {/* header */}

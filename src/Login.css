@@ -23,16 +23,18 @@
 
 .login > form {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .login > form > input {
   width: 350px;
-  height: 50px;
+  height: 60px;
   font-size: 20px;
   padding-right: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .login > form > textarea {
@@ -49,14 +51,27 @@
 }
 
 .login > form > button {
-  width: 356px;
+  width: 180px;
   height: 50px;
   font-size: large;
   color: #ffff;
-  margin: 5px 20px 7px 5px;
+  margin: 5px 0px 7px 0px;
   background-color: #0074b1;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
+}
+
+.login > form > p > a {
+  color: #0074b1;
+}
+
+.login > form > p {
+  text-align: center;
+  color: white;
+}
+
+.login > form > p > a::hover {
+  color: #65bae7;
 }
 
 .login > form > button:hover {

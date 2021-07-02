@@ -5,10 +5,10 @@ import { auth } from "./firebase";
 import "./Login.css";
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const [profilePic, setProfilePic] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
+  const [profilePic, setProfilePic] = useState('');
 
   const dispatch = useDispatch();
 
@@ -23,8 +23,7 @@ function Login() {
             uid: userAuth.user.uid,
             displayName: userAuth.user.displayName,
             profileUrl: userAuth.user.photoURL,
-          })
-        );
+          }))
       })
       .catch((error) => alert(error));
   };
@@ -49,9 +48,8 @@ function Login() {
                 uid: userAuth.user.uid,
                 displayName: name,
                 photoUrl: profilePic,
-              })
-            );
-          });
+              }))
+          })
       })
       .catch((error) => alert(error));
   };
@@ -61,15 +59,10 @@ function Login() {
       <a name="top"></a>
       <h1>
         <span>Even</span>Jobs
-      </h1>
+      </h1> 
+      <br />
 
       <form>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Full name (required if sign up)"
-        />
         <input
           type="email"
           value={email}
@@ -82,20 +75,11 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
-        <textarea
-          className="description-box"
-          value={profilePic}
-          onChange={(e) => setProfilePic(e.target.value)}
-          placeholder="Description yourself, your past experiences and acquired skills(required if sign up)"
-          cols="30"
-          rows="8"
-        ></textarea>
         <button type="submit" onClick={loginToApp}>
           Sign In
         </button>
-        <button type="submit" onClick={register}>
-          Sign Up
-        </button>
+        <p>Haven't registered yet? <a href="#bottom">  Register</a></p>
+        
       </form>
 
       <div className="about-us">
@@ -131,6 +115,46 @@ function Login() {
           </span>
         </p>
       </div>
+      <br />
+      <br />
+      <a name="bottom"></a>
+
+      <h1>Register Now!</h1>
+      <br />
+
+      <form>
+     
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Full name"
+        />
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password (minimum 8 characters)"
+        />
+        <textarea
+          className="description-box"
+          value={profilePic}
+          onChange={(e) => setProfilePic(e.target.value)}
+          placeholder="Description yourself, your past experiences and acquired skills(required if sign up)"
+          cols="30"
+          rows="8"
+        ></textarea>
+        
+        <button type="submit" onClick={register}>
+          Register
+        </button>
+      </form>
     </div>
   );
 }

@@ -4,7 +4,9 @@
     rgba(26, 33, 64, 1) 10.9%,
     rgba(81, 84, 115, 1) 87.1%
   ); */
-  background-color: #2b2e4a;
+  background-image: repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),
+  repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg,
+   hsl(117,23%,30%),hsl(117,53%,30%),hsl(117,53%,30%),hsl(117,53%,30%),hsl(117,53%,30%));
   height: 100%;
   display: flex;
   flex-direction: column;
