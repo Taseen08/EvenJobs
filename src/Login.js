@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import React, { useState } from "react";
+import { ReactComponent as LoginIcon} from "./SVG/Login.svg";
 import { login } from "./features/userSlice";
 import { auth } from "./firebase";
 import "./Login.css";
@@ -61,8 +62,10 @@ function Login() {
         <span>Even</span>Jobs
       </h1> 
       <br />
+    <div className="signin">
+      <LoginIcon data-aos="fade-right" data-aos-delay="300" className="loginicon"/>
 
-      <form>
+      <form data-aos="fade-left" data-aos-delay="100">
         <input
           type="email"
           value={email}
@@ -81,13 +84,15 @@ function Login() {
         <p>Haven't registered yet? <a href="#bottom">  Register</a></p>
         
       </form>
+      </div>
 
-      <div className="about-us">
-        <h1>
+      <div data-aos="fade-up" data-aos-delay="100" className="about-us">
+        <h1 data-aos="fade-down" data-aos-delay="200">
           Are doing odd jobs <span>even</span> worth it?
-          <br /> <span>Definitely!</span>
+          <br /> 
+          <span>Definitely!</span>
         </h1>
-        <p>
+        <p data-aos="fade-up-right" data-aos-delay="300">
           Odd jobs are jobs at the end of the day. One should not be discouraged
           to avoid jobs like delivery-driver, tutoring, call-center jobs just
           because a particular group in the <span className="red"> Bangla</span>
@@ -119,30 +124,34 @@ function Login() {
       <br />
       <a name="bottom"></a>
 
-      <h1>Register Now!</h1>
+      <h2 data-aos="flip-up" data-aos-delay="200">Register Now!</h2>
       <br />
 
       <form>
      
         <input
+          data-aos="fade-right" data-aos-delay="300"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Full name"
         />
         <input
+          data-aos="fade-right" data-aos-delay="300"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
         />
         <input
+          data-aos="fade-right" data-aos-delay="300"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password (minimum 8 characters)"
         />
         <textarea
+          data-aos="fade-right" data-aos-delay="300"
           className="description-box"
           value={profilePic}
           onChange={(e) => setProfilePic(e.target.value)}
@@ -151,9 +160,10 @@ function Login() {
           rows="8"
         ></textarea>
         
-        <button type="submit" onClick={register}>
+        <button data-aos="fade-up" data-aos-delay="350" type="submit" onClick={register}>
           Register
         </button>
+        <p data-aos="fade-left" data-aos-delay="300">Have an account? <a href="#top">Sign in</a></p>
       </form>
     </div>
   );

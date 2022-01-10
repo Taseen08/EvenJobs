@@ -6,11 +6,12 @@
   ); */
   background-image: repeating-linear-gradient(112.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),
   repeating-linear-gradient(0deg, rgb(0,0,0) 0px, rgb(0,0,0) 20px,transparent 20px, transparent 21px),linear-gradient(90deg,
-   hsl(117,23%,30%),hsl(117,53%,30%),hsl(117,53%,30%),hsl(117,53%,30%),hsl(117,53%,30%));
+   rgb(49, 51, 131),rgb(36, 44, 117),rgb(48, 32, 133),rgb(36, 44, 117),rgb(37, 18, 122));
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 .app-body {

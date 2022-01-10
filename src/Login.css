@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 .login {
   display: flex;
   flex-direction: column;
@@ -7,21 +9,97 @@
   margin-right: auto;
   padding-top: 100px;
   padding-bottom: 320px;
+  width: 100vw;
 }
 
 .login > h1 {
-  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 98px;
   color: rgb(14, 202, 108);
-  font-weight: 2200;
+  font-weight: 900;
+}
+
+.login > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(14, 202, 108);
+  font-weight: 900;
 }
 
 .login > h1 > span {
   color: rgb(221, 14, 14);
-  font-size: 65px;
-  font-weight: 1800;
+  font-size: 92px;
+  font-weight: 1000;
 }
 
-.login > form {
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-top: 3%;
+}
+
+
+
+.loginicon {
+  height: 450px;
+  width: 450px;
+}
+
+.signin > form  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #474c6d33;
+  padding: 90px 30px;
+  border-width: 0.5px;
+  border-style:ridge;
+  border-color: #3a3a3d63;
+  width: 600px;
+}
+
+.signin > form > input {
+  width: 350px;
+  height: 60px;
+  font-size: 20px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+
+.signin > form > button {
+  width: 180px;
+  height: 50px;
+  font-size: large;
+  color: #ffff;
+  margin: 5px 0px 7px 0px;
+  background-color: #0074b1;
+  border-radius: 10px;
+  border: none;
+}
+
+.signin > form > p > a {
+  color: #0074b1;
+}
+
+.signin > form > p {
+  text-align: center;
+  color: white;
+}
+
+.signin > form > p > a:hover {
+  color: #65bae7;
+}
+
+.signin > form > button:hover {
+  background-color: #1393d8;
+}
+
+.login > form  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +148,7 @@
   color: white;
 }
 
-.login > form > p > a::hover {
+.login > form > p > a:hover {
   color: #65bae7;
 }
 
@@ -93,19 +171,19 @@
   color: white;
 }
 
-.login .about-us {
+.about-us {
   width: 50%;
   height: auto;
-  background-color: rgba(16, 13, 44, 0.212);
-  margin-top: 10%;
-  padding: 10px 15px 30px 15px;
+  background-color: rgba(63, 62, 71, 0.212);
+  margin: 10% 0;
+  padding: 7% 9%;
   border-radius: 10px;
   overflow-wrap: break-word;
   white-space: inherit;
 }
 
 .login .about-us > h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: rgb(14, 202, 108);
   font-weight: 400;
   margin-bottom: 5%;
@@ -113,7 +191,7 @@
 
 .login .about-us > h1 > span {
   color: rgb(221, 14, 14);
-  font-size: 65px;
+  font-size: 60px;
   font-weight: 600;
 }
 
@@ -146,6 +224,48 @@
   color: rgb(14, 202, 108);
 }
 
+@media (max-width: 1230px) {
+  .loginicon {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .login > h1 {
+    font-size: 50px;
+  }
+  
+  .login > h2 {
+    font-size: 38px;
+  }
+  
+  .login > h1 > span {
+    font-size: 48px;
+  }
+  .signin > form {
+    background: none;
+    padding: 0;
+    border: none;
+  }
+  .signin > form > input {
+    width: 90vw;
+  }
+  .signin , .about-us {
+    margin-bottom: 40%;
+  }
+  .about-us {
+    width: 80vw;
+    text-align: center;
+  }
+  .login .about-us > h1 {
+    font-size: 30px;
+  }
+  .login .about-us > h1 > span {
+    font-size: 30px;
+  }
+}
+
+
 @media (max-width: 400px) {
   .login {
     margin: 0 15px 0 15px;
@@ -162,11 +282,5 @@
   .login > form > button {
     width: 90%;
     height: 40px;
-  }
-  .login .about-us > h1 {
-    font-size: 20px;
-  }
-  .login .about-us > h1 > span {
-    font-size: 20px;
   }
 }
