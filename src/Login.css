@@ -53,11 +53,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #474c6d33;
+  background-color: rgba(63, 62, 71, 0.212);
   padding: 90px 30px;
   border-width: 0.5px;
-  border-style:ridge;
-  border-color: #3a3a3d63;
+  border-style: double;
+  border-color: #23232763;
+  border-radius: 5px;
   width: 600px;
 }
 
